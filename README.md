@@ -1,26 +1,26 @@
-#Título: Projeto # 💱 Convert Money
+Título: Projeto Convert Money 💱
 
 Resumo:
 Projeto pessoal desenvolvido para praticar habilidades com HTML, CSS e JavaScript. 
 O Convert Money é um conversor de moedas intuitivo que permite transformar valores de Real Brasileiro (BRL) para outras moedas.
 
 
-## ✨ Funcionalidades Principais:
+✨ Funcionalidades Principais:
 
 - Conversão em tempo real;
 - Design moderno e responsivo;
 - Câmbio atualizado de moedas tradicionais e criptomoeda;
 
-## 🔧 Tecnologias utilizadas:
+🔧 Tecnologias utilizadas:
 
 - HTML5
 - CSS3
 - JavaScript
 
-## Diferenciais: 
+Diferenciais: 
 Mesmo sendo um projeto simples de conversão de moedas, ele pode se destacar por vários aspectos. 
 
-##Motivação:
+Motivação:
 O projeto nasceu da vontade de aplicar, na prática, os conhecimentos que estava adquirindo em HTML, CSS e JavaScript.
 Em vez de apenas seguir tutoriais, quis criar algo funcional, visualmente agradável e útil.
 
