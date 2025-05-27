@@ -21,6 +21,7 @@ Diferenciais:
 
 Mesmo sendo um projeto simples de conversão de moedas, ele pode se destacar por vários aspectos. 
 
+
 Motivação:
 
 O projeto nasceu da vontade de aplicar, na prática, os conhecimentos que estava adquirindo em HTML, CSS e JavaScript.
