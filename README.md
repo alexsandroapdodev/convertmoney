@@ -18,9 +18,11 @@ O Convert Money é um conversor de moedas intuitivo que permite transformar valo
 - JavaScript
 
 Diferenciais: 
+
 Mesmo sendo um projeto simples de conversão de moedas, ele pode se destacar por vários aspectos. 
 
 Motivação:
+
 O projeto nasceu da vontade de aplicar, na prática, os conhecimentos que estava adquirindo em HTML, CSS e JavaScript.
 Em vez de apenas seguir tutoriais, quis criar algo funcional, visualmente agradável e útil.
 
