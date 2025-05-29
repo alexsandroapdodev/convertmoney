@@ -6,8 +6,20 @@
     outline: none;
 }
 
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+}
+
 body {
     background-color: #8A51FC;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    width: 100vw;
+    max-width: 375px;
 }
 
 .logo {
@@ -17,7 +29,7 @@ body {
 }
 
 main {
-    width: 375px;
+    width: 100%;
     background: #F4F4F4;
     border-radius: 20px;
     margin: 0 auto 40px;
@@ -37,26 +49,26 @@ select {
     height: 48px;
     width: 100%;
     margin-bottom: 24px;
-    appearance: none;
     padding-left: 18px;
     font-weight: 700;
     font-size: 16px;
     color: #555555;
+    appearance: none;
     cursor: pointer;
 }
 
 input {
-    background: #ffffff;
+        background: #ffffff;
     border: 1px solid #BBBBBB;
     border-radius: 4px;
     height: 48px;
     width: 100%;
     margin-bottom: 24px;
-    appearance: none;
     padding-left: 18px;
     font-weight: 700;
     font-size: 16px;
     color: #555555;
+    appearance: none;
 }
 
 button {
