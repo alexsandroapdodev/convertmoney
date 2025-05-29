@@ -6,44 +6,48 @@ function convertValues() {
     const currencyValueToConvert = document.querySelector(".currency-value-to-convert")
     const currencyValueConverted = document.querySelector(".currency-value")
 
-    // Cotações fixas — substitua depois por valores atualizados se quiser
-    const dolarToday = 5.2
-    const euroToday = 6.2
-    const libraToday = 6.5
-    const bitcoinToday = 350000 // valor de exemplo em reais
+    fetch('https://economia.awesomeapi.com.br/json/last/USD-BRL,EUR-BRL,GBP-BRL,BTC-BRL?token=61d51017481d936803cab076cbbfab14372b8778f13d53e2b0e91419c178f839')
+        .then(response => response.json())
+        .then(data => {
+            const dolarToday = Number(data.USDBRL.high)
+            const euroToday = Number(data.EURBRL.high)
+            const libraToday = Number(data.GBPBRL.high)
+            const bitcoinToday = Number(data.BTCBRL.high)
 
-    if (currencySelect.value === "dolar") {
-        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
-            style: "currency",
-            currency: "USD"
-        }).format(inputCurrencyValue / dolarToday)
-    }
+            if (currencySelect.value === "dolar") {
+                currencyValueConverted.innerHTML = new Intl.NumberFormat("en-US", {
+                    style: "currency",
+                    currency: "USD"
+                }).format(inputCurrencyValue / dolarToday)
+            }
 
-    if (currencySelect.value === "euro") {
-        currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
-            style: "currency",
-            currency: "EUR"
-        }).format(inputCurrencyValue / euroToday)
-    }
+            if (currencySelect.value === "euro") {
+                currencyValueConverted.innerHTML = new Intl.NumberFormat("de-DE", {
+                    style: "currency",
+                    currency: "EUR"
+                }).format(inputCurrencyValue / euroToday)
+            }
 
-    if (currencySelect.value === "libra") {
-        currencyValueConverted.innerHTML = new Intl.NumberFormat("en-GB", {
-            style: "currency",
-            currency: "GBP"
-        }).format(inputCurrencyValue / libraToday)
-    }
+            if (currencySelect.value === "libra") {
+                currencyValueConverted.innerHTML = new Intl.NumberFormat("en-GB", {
+                    style: "currency",
+                    currency: "GBP"
+                }).format(inputCurrencyValue / libraToday)
+            }
 
-    if (currencySelect.value === "bitcoin") {
-        currencyValueConverted.innerHTML = (inputCurrencyValue / bitcoinToday).toLocaleString("en-US", {
-            minimumFractionDigits: 8,
-            maximumFractionDigits: 8
-        }) + " BTC"
-    }
+            if (currencySelect.value === "bitcoin") {
+                currencyValueConverted.innerHTML = (inputCurrencyValue / bitcoinToday).toLocaleString("en-US", {
+                    minimumFractionDigits: 8,
+                    maximumFractionDigits: 8
+                }) + " BTC"
+            }
 
-    currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
-        style: "currency",
-        currency: "BRL"
-    }).format(inputCurrencyValue)
+            currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
+                style: "currency",
+                currency: "BRL"
+            }).format(inputCurrencyValue)
+        })
+        .catch(error => console.error('Erro ao buscar cotações:', error))
 }
 
 function changeCurrency() {
