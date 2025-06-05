@@ -1,32 +1,6 @@
-Título: Projeto Convert Money 💱
+Projeto pessoal da formação acadêmica no clube do desenvolvimento, para praticar habilidades em html, css e javascript. É um conversor de moedas em tempo real, intuitivo, que permite transformar valores em reais para outras moedas.
 
-Resumo:
-Projeto pessoal desenvolvido para praticar habilidades com HTML, CSS e JavaScript. 
-O Convert Money é um conversor de moedas intuitivo que permite transformar valores de Real Brasileiro (BRL) para outras moedas.
-
-
-✨ Funcionalidades Principais:
-
-- Conversão em tempo real;
-- Design moderno e responsivo;
-- Câmbio atualizado de moedas tradicionais e criptomoeda;
-
-🔧 Tecnologias utilizadas:
-
-- HTML5
-- CSS3
-- JavaScript
-
-Diferenciais: 
-
-Mesmo sendo um projeto simples de conversão de moedas, ele pode se destacar por vários aspectos. 
-
-
-Motivação:
-
-O projeto nasceu da vontade de aplicar, na prática, os conhecimentos que estava adquirindo em HTML, CSS e JavaScript.
-Em vez de apenas seguir tutoriais, quis criar algo funcional, visualmente agradável e útil.
-
+Veja Aqui: https://convertofmoedas.netlify.app
 
 
 ![home](https://github.com/user-attachments/assets/46d6d43d-b452-4d38-9df8-aac8b174e618)
@@ -44,4 +18,4 @@ Em vez de apenas seguir tutoriais, quis criar algo funcional, visualmente agrad�
 ![1000](https://github.com/user-attachments/assets/4daa78fc-c332-41a1-afc7-5ff498a41840)
 
 
-Veja Aqui => https://convertofmoedas.netlify.app
+
